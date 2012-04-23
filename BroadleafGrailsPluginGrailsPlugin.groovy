@@ -42,9 +42,10 @@ import org.grails.datastore.gorm.jpa.plugin.support.JpaMethodsConfigurer;
  * @author Kelly Tisdell
  */
 class BroadleafGrailsPluginGrailsPlugin {
-	// the maven groupId
-	def groupId = "org.broadleafcommerce.grails"
-	// the plugin version
+    // the maven groupId
+    def groupId = "org.broadleafcommerce.grails"
+    
+    // the plugin version
     def version = "0.1"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.0.3 > *"
@@ -67,10 +68,10 @@ class BroadleafGrailsPluginGrailsPlugin {
     // Extra (optional) plugin metadata
 
     // License: one of 'APACHE', 'GPL2', 'GPL3'
-	def license = "APACHE"
+    def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
-	def organization = [ name: "Broadleaf Commerce", url: "http://www.broadleafcommerce.org" ]
+    def organization = [ name: "Broadleaf Commerce", url: "http://www.broadleafcommerce.org" ]
 
     // Any additional developers beyond the author specified above.
 	//def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
@@ -79,11 +80,10 @@ class BroadleafGrailsPluginGrailsPlugin {
 	//def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-	//def scm = [ url: "http://svn.grails-plugins.codehaus.org/browse/grails-plugins/" ]
+    def scm = [ url: "https://github.com/BroadleafCommerce/broadleaf-grails-plugin" ]
 
     def doWithWebDescriptor = { xml ->
         //Consider adding an CustomerStateFilter here.  Or, create a CustomerStateInterceptor...
-        //Also consider adding any additional tag libs here since we need tags for content.
     }
 
     def doWithSpring = {
