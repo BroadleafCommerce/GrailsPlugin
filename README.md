@@ -61,3 +61,6 @@ Next Steps
 ----------
 
 We are working on more detailed documentation for using this plugin.  We will also be providing a sample application that uses this plugin to demonstrate how it works.
+
+Something else that will likely be required are Grails Taglibs for certain features such as URL re-writing and content management.
+
