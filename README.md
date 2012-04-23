@@ -32,11 +32,9 @@ Getting Started
 
 5. Install the [Grails Release Plugin] [grp] in the domain extension project (grails install-plugin release)
 
-6. Build the domain extension project as a binary (grails package-plugin --binary)
+6. Build the domain extension project as a jar and publish it to the local Maven cache (grails maven-install --binary). Alternatively you can specify that the default packaging for the domain extension is a jar in the plugin descriptor with def packaging = "binary" and then simply run grails maven-install.
 
-7. Build the domain extension project as a jar and publish it to the local Maven cache (grails maven-install)
-
-6. In the main web application, add a dependency on the domain extension project, which should be available as a jar in the local Maven cache
+7. In the main web application, add a dependency on the domain extension project, which should be available as a jar in the local Maven cache
 
   [maven_docs]: http://maven.apache.org/download.html
   [grails_docs]: http://grails.org/Quick+Start
