@@ -16,7 +16,7 @@ grails.project.dependency.resolution = {
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
         mavenCentral()
-        mavenLocal()
+        //mavenLocal()
 		
 	mavenRepo "http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/"
 		
