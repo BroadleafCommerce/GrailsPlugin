@@ -55,6 +55,8 @@ The Broadleaf Grails Plugin is very new.  There are a number of know issues curr
   
   b. In order to expose the domain extensions to the Broadleaf Admin module, they need to be in a separate jar file, resolvable by Maven.
   
+4. Currently this plugin depends on Broadleaf Commerce 1.7 SNAPSHOT.
+
 Next Steps
 ----------
 
