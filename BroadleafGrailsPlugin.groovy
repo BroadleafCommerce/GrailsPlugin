@@ -60,7 +60,10 @@ class BroadleafGrailsPluginGrailsPlugin {
     def title = "Broadleaf Grails Plugin" // Headline display name of the plugin
     def author = "Kelly Tisdell"
     def authorEmail = "ktisdell@broadleafcommerce.org"
-    def description = "A Grails Plugin for Broadleaf Commerce"
+    def description = "Broadleaf Commerce is an enterprise eCommerce framework built on Spring and JPA/Hibernate. \ 
+Broadleaf Commerce is completely extensible, allowing you to override and extend the framework with custom entities \
+and business logic.  Broadleaf Commerce does not prescribe a UI, so an number of user interfaces can be used. This \ 
+plugin allows Broadleaf Commerce to extended and deployed as a Grails Plugin."
 
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/broadleaf-grails-plugin"

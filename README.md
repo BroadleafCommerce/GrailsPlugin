@@ -1,7 +1,7 @@
 Broadleaf Grails Plugin
 =======================
 
-broadleaf-grails-plugin
+broadleaf
 
 Overview
 --------
@@ -28,7 +28,7 @@ Getting Started
   
   b. The second project should be a standard Grails application for the main web application
   
-4. Add a dependency on the broadleaf-grails-plugin (grails install-plugin broadleaf-grails-plugin) to each of the projects.
+4. Add a dependency on the broadleaf-grails-plugin (grails install-plugin broadleaf) to each of the projects.
 
 5. Install the [Grails Release Plugin] [grp] in the domain extension project (grails install-plugin release)
 
