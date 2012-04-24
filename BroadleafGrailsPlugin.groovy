@@ -64,11 +64,11 @@ class BroadleafGrailsPlugin {
 Broadleaf Commerce provides an entire suite of eCommerce functionality including, but not limited to, a shopping cart, \
 pricing engine, checkout workflow, flexible fulfillment groups, rules-based offers and promotions, and content management with rules-based targeted content. \
 Broadleaf Commerce is completely extensible, allowing you to override and extend the framework with custom entities \
-and business logic as you see fit.  Broadleaf Commerce does not prescribe a UI, so an number of user interfaces can be used. This \
-plugin allows Broadleaf Commerce to be extended and deployed as a Grails Plugin. In particular, Broadleaf provides a complex \
+and business logic as you see fit.  Broadleaf Commerce does not prescribe a UI, so any number of user interfaces can be used. This \
+plugin allows Broadleaf Commerce to be extended and deployed as a Grails application. In particular, Broadleaf provides a complex \
 merge process, which merges multiple Spring application context files together to override and extend default Broadleaf components \
-and behavior.  Grails has some similar functionality. This plugin allows Broadleaf's unique merge process and configuration paradigm \
-to be incorporated into a Grails application, allowing a Grails developer to extend Broadleaf's JPA domain with GORM components, \
+and behavior.  Grails has some similar override functionality. This plugin allows Broadleaf's unique merge process and configuration paradigm \
+to be incorporated into a Grails application and lifecycle, allowing a Grails developer to extend Broadleaf's JPA domain with GORM components, \
 extend Broadleaf's service layer with Grails services, and expose this functionality through Grails controllers and GSPs."
 
     // URL to the plugin's documentation
