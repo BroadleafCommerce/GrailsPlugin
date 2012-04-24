@@ -41,7 +41,7 @@ import org.grails.datastore.gorm.jpa.plugin.support.JpaMethodsConfigurer;
  * 
  * @author Kelly Tisdell
  */
-class BroadleafGrailsPluginGrailsPlugin {
+class BroadleafGrailsPlugin {
     // the maven groupId
     def groupId = "org.broadleafcommerce.grails"
     
@@ -60,9 +60,9 @@ class BroadleafGrailsPluginGrailsPlugin {
     def title = "Broadleaf Grails Plugin" // Headline display name of the plugin
     def author = "Kelly Tisdell"
     def authorEmail = "ktisdell@broadleafcommerce.org"
-    def description = "Broadleaf Commerce is an enterprise eCommerce framework built on Spring and JPA/Hibernate. \ 
+    def description = "Broadleaf Commerce is an enterprise eCommerce framework built on Spring and JPA/Hibernate. \
 Broadleaf Commerce is completely extensible, allowing you to override and extend the framework with custom entities \
-and business logic.  Broadleaf Commerce does not prescribe a UI, so an number of user interfaces can be used. This \ 
+and business logic.  Broadleaf Commerce does not prescribe a UI, so an number of user interfaces can be used. This \
 plugin allows Broadleaf Commerce to extended and deployed as a Grails Plugin."
 
     // URL to the plugin's documentation
