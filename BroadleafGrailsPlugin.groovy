@@ -130,7 +130,7 @@ extend Broadleaf's service layer with Grails services, and expose this functiona
 		patchLocations.each {
 			def patch = null
 			if (it.startsWith("classpath")) {
-				def is = BroadleafGrailsPluginGrailsPlugin.class.getClassLoader().getResourceAsStream(it.substring("classpath*:".length(), it.length()))
+				def is = BroadleafGrailsPlugin.class.getClassLoader().getResourceAsStream(it.substring("classpath*:".length(), it.length()))
 				if (is){
 					patch = new ResourceInputStream(is, it)
 					patches << patch
