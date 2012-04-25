@@ -42,11 +42,9 @@ import org.grails.datastore.gorm.jpa.plugin.support.JpaMethodsConfigurer;
  * @author Kelly Tisdell
  */
 class BroadleafGrailsPlugin {
-    // the maven groupId
-    def groupId = "org.broadleafcommerce.grails"
     
     // the plugin version
-    def version = "0.1"
+    def version = "0.0.1-SNAPSHOT"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.0.3 > *"
     // the other plugins this plugin depends on
@@ -86,7 +84,7 @@ extend Broadleaf's service layer with Grails services, and expose this functiona
 	//def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
 
     // Location of the plugin's issue tracker.
-	//def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
+	def issueManagement = [ system: "JIRA", url: "http://jira.broadleafcommerce.org" ]
 
     // Online location of the plugin's browseable source code.
     def scm = [ url: "https://github.com/BroadleafCommerce/broadleaf-grails-plugin" ]

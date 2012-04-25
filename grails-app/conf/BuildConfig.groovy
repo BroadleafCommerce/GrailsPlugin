@@ -16,10 +16,10 @@ grails.project.dependency.resolution = {
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
         mavenCentral()
-        //mavenLocal()
+        mavenLocal()
 		
 	mavenRepo "http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/"
-		
+        mavenRepo "http://www.terracotta.org/download/reflector/releases"		
         //mavenRepo "http://snapshots.repository.codehaus.org"
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
@@ -72,7 +72,7 @@ grails.project.dependency.resolution = {
 			    ":gorm-jpa:1.0.0.M1")
 		
         build(":tomcat:$grailsVersion",
-              ":release:1.0.0") {
+              ":release:1.0.1") {
             export = false
         }
     }
