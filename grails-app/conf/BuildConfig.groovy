@@ -12,11 +12,14 @@ grails.project.dependency.resolution = {
     }
     log "warn" // log level of Ivy resolver, either "error", "warn", "info", "debug" or "verbose"
     repositories {
+        inherits true
+        grailsPlugins()
+        grailsHome()
         grailsCentral()
-        // uncomment the below to enable remote dependency resolution
+
         // from public Maven repositories
         mavenCentral()
-        mavenLocal()
+        //mavenLocal()
 		
 	mavenRepo "http://www.broadleafcommerce.org/nexus/content/repositories/snapshots/"
         mavenRepo "http://www.terracotta.org/download/reflector/releases"		
@@ -33,12 +36,15 @@ grails.project.dependency.resolution = {
 		
 		def excludes = {
 			excludes "slf4j-simple", "persistence-api", "commons-logging", "jcl-over-slf4j", "slf4j-api", "jta", "xmlbeans"
-			excludes "spring-core", "spring-beans", "spring-aop", "spring-asm","spring-webmvc","spring-tx", "spring-context", "spring-web", "log4j", "slf4j-log4j12"
+			excludes "spring-core", "spring-beans", "spring-aop", "spring-asm","spring-webmvc","spring-tx"
+			excludes "spring-context", "spring-web", "spring-parent", "spring-jdbc"
+			excludes "log4j", "slf4j-log4j12"
 			excludes group:"org.grails", name:"grails-core"
 			excludes group:"org.grails", name:"grails-gorm"
 			excludes group:"org.grails", name:"grails-test"
 			excludes group:"xml-apis", name:"xml-apis"
 			excludes "ehcache-core"
+			excludes "jsr173_api", "stax-api"
 			//transitive = false
 		}
 		
@@ -62,14 +68,14 @@ grails.project.dependency.resolution = {
 			[group: "org.springframework.security", name: "spring-security-config", version: "${springVersion}"],
 			
 			excludes
-			)
+			)  
 		
         // runtime "mysql:mysql-connector-java:5.1.5"
     }
 
     plugins {
-		compile(":hibernate-jpa-provider:1.0.0.M1",
-			    ":gorm-jpa:1.0.0.M1")
+	compile ":hibernate-jpa-provider:1.0.0.M1"
+	compile ":gorm-jpa:1.0.0.M1" 
 		
         build(":tomcat:$grailsVersion",
               ":release:1.0.1") {
