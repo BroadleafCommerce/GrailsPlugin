@@ -47,8 +47,7 @@ class BroadleafGrailsPlugin {
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.0.3 > *"
     // the other plugins this plugin depends on
-    def dependsOn = [ "gorm-jpa" : "1.0.0.M1 > *", 
-		"hibernate-jpa-provider" : "1.0.0.M1 > *" ]
+    def dependsOn = [:]
     // resources that are excluded from plugin packaging
     def pluginExcludes = [
         "grails-app/views/error.gsp"

@@ -77,8 +77,7 @@ grails.project.dependency.resolution = {
 	compile ":hibernate-jpa-provider:1.0.0.M1"
 	compile ":gorm-jpa:1.0.0.M1" 
 		
-        build(":tomcat:$grailsVersion",
-              ":release:1.0.1") {
+        build(":release:2.0.0"){
             export = false
         }
     }
